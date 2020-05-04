@@ -1,3 +1,15 @@
+---
+title: "Active learning mapping in Congo"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["default", "lucy", "middlebury-fonts", "themes/class1.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
 ## Background
 
 
@@ -27,8 +39,10 @@ A crop field in the congo
 
 Above is the overal AOI 
 
+---
+
 ## 1 image acquisition - Noah
-  -The first stag is Image acquisition
+  -The first stage is Image acquisition
   -This was completed using EC2 and Planet Scope Imagery.Planet Scope Satellites are box satellites provide high temporal and spatial resolution for cropland identifciation.  
   - two time frames the dry season (December-February) and the wet season (May - September) (Estes 7)
   
@@ -45,6 +59,7 @@ Above is the overal AOI
 
 Composite Image right is growing season and left is nongrowing season
 
+---
 
 ## 2 Training data collection -Priyanka and Wei Hong
 
@@ -100,7 +115,7 @@ Composite Image right is growing season and left is nongrowing season
  
  
  
- 
+--- 
 
 ##Machine learning/ (Future)
 -Apart of future steps in mapping the cropland of congo
@@ -121,6 +136,9 @@ Composite Image right is growing season and left is nongrowing season
 
 
 - Mapper is a random forrest algthrim that has 80 trees
+
+---
+
 ##Conclusion
 -The final two steps are the active feedback loop and segmentation
 -This segmentation (field segmentation) step is powered by a meanshift algorithm (Yizong Cheng 1995) and followed up by a accuracy assessment
