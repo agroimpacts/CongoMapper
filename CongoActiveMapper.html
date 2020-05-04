@@ -18,83 +18,69 @@ class: center, middle, inverse, title-slide
 
 
 ## Background and Objective
+-The project aims to identify croplands in Western Congo through machine learning techniques
+- Areas of interest were identified by Cloud to Street and had seen severe flooding in the last few years
+- An Active Learning Framework that currently exists for Ghana expanded for this region
+---
+## Methodology
+- The project utilizes an AWS platform (EC2 for computing and S3 for storage) and crowdsourcing methods for training data collection
 
+- The four major components of the process are:
 
-A crop field in the congo 
-
-This project builds upon the work done on the Mapping Africa project.
-The project seeks to implement the exsting Active Learning Framwork from Ghana to the Congo.
-The project is computational powered by AWS (EC2 for compute and S3 for storage) and has a large human feedbackloop.
-
-
-There are four major mapping components:
-
-    1) image acquisition and pre-processing 
+    1) Image Acquisition and Pre-Processing
     
-    2) training data 
+    2) Training data 
     
-    3) machine learning
+    3) Machine Learning
     
-    4) segmentation 
+    4) Segmentation 
 
-
-
-Above is the overal AOI 
 
 ---
+## Image acquisition
+- Planet Imagery at a 3 to 4 meter resolution acquired for areas of interest
+- Planet Scope Satellites are box satellites provide high temporal and spatial resolution for cropland identification
+- Image acquired for two time frames:
 
-## 1) Image acquisition - Noah
-The first stage is Image acquisition
-This was completed using EC2 and Planet Scope Imagery.Planet Scope Satellites are box satellites provide high temporal and spatial resolution for cropland identification. 
-Two time frames: 
-
-     1) Dry season (December-February)
+     1) Off-Season or Dry season- Between December to February
      
-     2) Wet season (May - September)
+     2) Growing Season or Wet Season- Between May to September
+
+&lt;img src="C:/Users/prverma/Desktop/SPRING2020/AdvRaster/CongoMapper/images/GS.png" width="60%" style="display: block; margin: auto;" /&gt;
+![Growing Season](./images/GS.png) 
+![Growing Season](images/OS.png) 
+
   
-
-
-
-
-
-
-
-
-
-
-
-Composite image on the right is growing season, and on the left is non-growing season.
-
 ---
-
-## 2) Training data collection -Priyanka and Wei Hong
-
-
-The images were then process in Amazon EC2, 200 training sites were randomly selected from the AOIs.
+## Training data collection
+- 200 Training sites from the 0.005-degree grid randomly selected across study area 
+- F-sites  were located 
 The sites are then stored in postgres. 
 
 
 Training site classfiers from the spatial collective in Africa access a OpenLayers.
 The classifiers from the spatial collect work on creating training and validation data.
 
-![alt text here]("Desktop/EOsettlemnt.png")
+
+![After](/figure/EOsettlemnt.png)
+
+&lt;!-- ```{r, echo=FALSE, out.width='95%', message = FALSE, warning = FALSE} --&gt;
+&lt;!-- knitr::include_graphics(here::here("Desktop/EOsettlemnt.png")) --&gt;
+&lt;!-- ``` --&gt;
+
 
 Settlement Locations (datafromHDX) and the buffer sights
 
- 
---- 
 
-
-## 3) Machine learning/ (Future)
+---
+## Machine learning/ (Future)
 In this stage the human / machine and machine connection is established.
 A "custom crowdsourcing platfrom" is created.
 
 This platfrom is called labeller wich is built around human assessors that complete tasks, includes building data for understanding accuracy and data training.
 Mapper is established for classfication, which uses a random forest algorithm. In this case, it has 80 trees.
 
-
 ---
-
 ## Conclusion
 The final two steps are the active feedback loop and segmentation.
 This segmentation (field segmentation) step is powered by a meanshift algorithm (Yizong Cheng, 1995) and followed up by a accuracy assessment.
@@ -104,8 +90,7 @@ Requires care towards accuarcy and limiting factors.
 
 
 ---
-
-## Thank you
+# Thank you
 Lyndon, Su and Lei
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
