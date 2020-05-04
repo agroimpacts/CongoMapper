@@ -70,7 +70,13 @@ The sites are then stored in postgres.
 Training site classfiers from the spatial collective in Africa access a OpenLayers.
 The classifiers from the spatial collect work on creating training and validation data.
 
-![alt text here]("Desktop/EOsettlemnt.png")
+
+![After](/figure/EOsettlemnt.png)
+
+<!-- ```{r, echo=FALSE, out.width='95%', message = FALSE, warning = FALSE} -->
+<!-- knitr::include_graphics(here::here("Desktop/EOsettlemnt.png")) -->
+<!-- ``` -->
+
 
 Settlement Locations (datafromHDX) and the buffer sights
 
