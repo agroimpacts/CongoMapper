@@ -32,7 +32,10 @@ A crop field in the congo
 -This project builds upon the work done on the Mapping Africa project. 
 -The project seeks to implement the exsting Active Learning Framwork from Ghana to the Congo
 -The project is computational powered by AWS (EC2 for compute and S3 for storage) and has a large human feedbackloop.There are four major mapping components: 
-    1) image acquisition and pre-processing, 2) training data, 3) machine learning, and 4) segmentation. 
+    1) image acquisition and pre-processing
+    2) training data
+    3) machine learning
+    4) segmentation 
 
 
 
@@ -50,8 +53,10 @@ Above is the overal AOI
 
 ## 1 image acquisition - Noah
   -The first stage is Image acquisition
-  -This was completed using EC2 and Planet Scope Imagery.Planet Scope Satellites are box satellites provide high temporal and spatial resolution for cropland identifciation.  
-  - two time frames the dry season (December-February) and the wet season (May - September) (Estes 7)
+  -This was completed using EC2 and Planet Scope Imagery.Planet Scope Satellites are box satellites provide high temporal and spatial resolution for cropland identification.
+  - Two time frames:
+     1) Dry season (December-February)
+     2) Wet season (May - September)
   
 
 
@@ -64,7 +69,7 @@ Above is the overal AOI
 
 
 
-Composite Image right is growing season and left is nongrowing season
+Composite image on the right is growing season, and on the left is non-growing season.
 
 ---
 
@@ -84,8 +89,8 @@ Composite Image right is growing season and left is nongrowing season
 
 
 
--The Images were then process in EC2, 200 training sites were randomly selected from the AOI
--the sites are then stored in postgrse. 
+-The images were then process in Amazon EC2, 200 training sites were randomly selected from the AOIs.
+-The sites are then stored in postgres. 
 
 
 
@@ -98,7 +103,7 @@ Composite Image right is growing season and left is nongrowing season
 
 
 
--Traning site classfiers from the spatial collective in africa access a OpenLayers.The classifiers from the -spatial collec work on creating tranning and validtion data
+-Training site classfiers from the spatial collective in Africa access a OpenLayers.The classifiers from the -spatial collect work on creating training and validation data.
 
 
 
@@ -129,8 +134,7 @@ Composite Image right is growing season and left is nongrowing season
 -In this stage the human / machine and machine connection is established 
 -A "custom crowdsourcing platfrom" is created(Estes 8)
 
--This platfrom is called labeller wich is built around human asserors that complete tasks
-    This includes building data for understanding accuracry and also data for tranning
+-This platfrom is called labeller wich is built around human assessors that complete tasks, includes building data for understanding accuracry and also data for tranning
 - Mapper is established for classfication 
 
 
@@ -142,22 +146,22 @@ Composite Image right is growing season and left is nongrowing season
 
 
 
-- Mapper is a random forrest algthrim that has 80 trees
+- Mapper is a random forest algorithm that has 80 trees
 
 ---
 
 ##Conclusion
 -The final two steps are the active feedback loop and segmentation
 -This segmentation (field segmentation) step is powered by a meanshift algorithm (Yizong Cheng 1995) and followed up by a accuracy assessment
--The challange of creating a automated system for cropland segmentaion in heaivly forested and remote area
--requires care towards accuarcy and limiting factors
+-The challange of creating a automated system for cropland segmentaion in heavily forested and remote area
+-Requires care towards accuarcy and limiting factors
     
 
 
-
+---
 
 ##Thank you
- -Lyndon Su and Lei
+ -Lyndon, Su and Lei
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
