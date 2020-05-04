@@ -15,10 +15,10 @@ output:
 
 A crop field in the congo 
 
-- This project builds upon the work done on the Mapping Africa project.
-- The project seeks to implement the exsting Active Learning Framwork from Ghana to the Congo
-- The project is computational powered by AWS (EC2 for compute and S3 for storage) and has a large human feedbackloop.
-- There are four major mapping components:
+-This project builds upon the work done on the Mapping Africa project.
+-The project seeks to implement the exsting Active Learning Framwork from Ghana to the Congo
+-The project is computational powered by AWS (EC2 for compute and S3 for storage) and has a large human feedbackloop.
+-There are four major mapping components:
     1) image acquisition and pre-processing 
     2) training data 
     3) machine learning
@@ -39,8 +39,8 @@ Above is the overal AOI
 ---
 
 ## 1) Image acquisition - Noah
-- The first stage is Image acquisition
-- This was completed using EC2 and Planet Scope Imagery.Planet Scope Satellites are box satellites provide high temporal and spatial resolution for cropland identification. 
+-The first stage is Image acquisition
+-This was completed using EC2 and Planet Scope Imagery.Planet Scope Satellites are box satellites provide high temporal and spatial resolution for cropland identification. 
 -Two time frames: 
      1) Dry season (December-February)
      2) Wet season (May - September)
@@ -63,37 +63,37 @@ Composite image on the right is growing season, and on the left is non-growing s
 ## 2) Training data collection -Priyanka and Wei Hong
 
 
-- The images were then process in Amazon EC2, 200 training sites were randomly selected from the AOIs. \n
-- The sites are then stored in postgres. 
+-The images were then process in Amazon EC2, 200 training sites were randomly selected from the AOIs. \n
+-The sites are then stored in postgres. 
 
 
 
 
-- Training site classfiers from the spatial collective in Africa access a OpenLayers.The classifiers from the - spatial collect work on creating training and validation data.
+-Training site classfiers from the spatial collective in Africa access a OpenLayers.The classifiers from the -spatial collect work on creating training and validation data.
 
 
 
-- Settlement Locations (datafromHDX) and the buffer sights
+-Settlement Locations (datafromHDX) and the buffer sights
 
  
 --- 
 
 
 ## 3) Machine learning/ (Future)
-- In this stage the human / machine and machine connection is established
-- A "custom crowdsourcing platfrom" is created(Estes 8)
+-In this stage the human / machine and machine connection is established
+-A "custom crowdsourcing platfrom" is created
 
-- This platfrom is called labeller wich is built around human assessors that complete tasks, includes building data for understanding accuracy and data training
--  Mapper is established for classfication, which uses a random forest algorithm. In this case, it has 80 trees.
+-This platfrom is called labeller wich is built around human assessors that complete tasks, includes building data for understanding accuracy and data training
+-Mapper is established for classfication, which uses a random forest algorithm. In this case, it has 80 trees.
 
 
 ---
 
 ## Conclusion
-- The final two steps are the active feedback loop and segmentation.
-- This segmentation (field segmentation) step is powered by a meanshift algorithm (Yizong Cheng 1995) and followed up by a accuracy assessment.
-- The challange of creating a automated system for cropland segmentaion in heavily forested and remote areas.
-- Requires care towards accuarcy and limiting factors.
+-The final two steps are the active feedback loop and segmentation.
+-This segmentation (field segmentation) step is powered by a meanshift algorithm (Yizong Cheng, 1995) and followed up by a accuracy assessment.
+-The challange of creating a automated system for cropland segmentaion in heavily forested and remote areas.
+-Requires care towards accuarcy and limiting factors.
     
 
 
