@@ -1,14 +1,3 @@
----
-title: "CongoActiveMapper"
-author: "Noah Berkowitz, Priyanka Verma, Wei Hong Loh"
-date: "May 3, 2020"
-output: slidy_presentation
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
 ## Background
 
 
@@ -23,8 +12,9 @@ A crop field in the congo
 
 -This project builds upon the work done on the Mapping Africa project. 
 -The project seeks to implement the exsting Active Learning Framwork from Ghana to the Congo
--The project is computational powered by AWS (EC2 for compute and S3 for storage) and has a large human feedbackloop.
--There are four major mapping components: 1) image acquisition and pre-processing, 2) training data, 3) machine learning, and 4) segmentation. 
+-The project is computational powered by AWS (EC2 for compute and S3 for storage) and has a large human feedbackloop.There are four major mapping components: 
+    1) image acquisition and pre-processing, 2) training data, 3) machine learning, and 4) segmentation. 
+
 
 
 
@@ -38,8 +28,9 @@ A crop field in the congo
 Above is the overal AOI 
 
 ## 1 image acquisition - Noah
-The first stag is image acquisition
-             -This was completed using EC2 and Planet Scope Imagery. Planets box satellites provide a great set of images for cropland         identifciation. 
+  -The first stag is Image acquisition
+  -This was completed using EC2 and Planet Scope Imagery.Planet Scope Satellites are box satellites provide high temporal and spatial resolution for cropland identifciation.  
+  - two time frames the dry season (December-February) and the wet season (May - September) (Estes 7)
   
 
 
@@ -49,7 +40,11 @@ The first stag is image acquisition
 
 
 
--Composite Image right is growing season and left is nongrowing season
+
+
+
+Composite Image right is growing season and left is nongrowing season
+
 
 ## 2 Training data collection -Priyanka and Wei Hong
 
@@ -66,8 +61,9 @@ The first stag is image acquisition
 
 
 
+
 -The Images were then process in EC2, 200 training sites were randomly selected from the AOI
-the sites are then stored in postgrse. 
+-the sites are then stored in postgrse. 
 
 
 
@@ -80,47 +76,61 @@ the sites are then stored in postgrse.
 
 
 
-Traning site classfiers from the spatial collective in africa access a OpenLayers.T
-he classifiers from the spatial collec work on creating tranning and validtion data
+-Traning site classfiers from the spatial collective in africa access a OpenLayers.The classifiers from the -spatial collec work on creating tranning and validtion data
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+-Settlement Locations (datafromHDX) and the buffer sights
 
  
-
-
-
-
-
-
-
-
-
-
-
-Settlement Locations (data from HDX) and the buffer sights
- 
  
  
  
 
+##Machine learning/ (Future)
+-Apart of future steps in mapping the cropland of congo
+-In this stage the human / machine and machine connection is established 
+-A "custom crowdsourcing platfrom" is created(Estes 8)
 
-
-###Machine learning/ (Future)
-
-
-
-
-
-
-
-##Conclsusion 
+-This platfrom is called labeller wich is built around human asserors that complete tasks
+    This includes building data for understanding accuracry and also data for tranning
+- Mapper is established for classfication 
 
 
 
 
-Thank you
-Lyndon Estes Su and Lei
+
+
+
+
+
+
+- Mapper is a random forrest algthrim that has 80 trees
+##Conclusion
+-The final two steps are the active feedback loop and segmentation
+-This segmentation (field segmentation) step is powered by a meanshift algorithm (Yizong Cheng 1995) and followed up by a accuracy assessment
+-The challange of creating a automated system for cropland segmentaion in heaivly forested and remote area
+-requires care towards accuarcy and limiting factors
+    
+
+
+
+
+##Thank you
+ -Lyndon Su and Lei
 
