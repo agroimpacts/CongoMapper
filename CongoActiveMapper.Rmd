@@ -22,15 +22,11 @@ The project is computational powered by AWS (EC2 for compute and S3 for storage)
 
 There are four major mapping components:
 
-
     1) image acquisition and pre-processing 
-    
     
     2) training data 
     
-    
     3) machine learning
-    
     
     4) segmentation 
 
@@ -45,9 +41,7 @@ The first stage is Image acquisition
 This was completed using EC2 and Planet Scope Imagery.Planet Scope Satellites are box satellites provide high temporal and spatial resolution for cropland identification. 
 Two time frames: 
 
-
      1) Dry season (December-February)
-     
      
      2) Wet season (May - September)
   
@@ -76,7 +70,7 @@ The sites are then stored in postgres.
 Training site classfiers from the spatial collective in Africa access a OpenLayers.
 The classifiers from the spatial collect work on creating training and validation data.
 
-
+![alt text here]("Desktop/EOsettlemnt.png")
 
 Settlement Locations (datafromHDX) and the buffer sights
 
