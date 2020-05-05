@@ -1,3 +1,2 @@
-# CongoMapper
-Automated Mapping of Congo
- 
+## Congo Cropland Classification Using Active Learning
+The purpose of this project is to gain an understanding and hands-on experience of cropland classification using an active learning framework. We seek to extend the existing active learning framework developed for identifying croplands in Ghana to the Congo region. Four areas of interest that have recently experienced flooding were dentified by Cloud to Street for cropland detection.
